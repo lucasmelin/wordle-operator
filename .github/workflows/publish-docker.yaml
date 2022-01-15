@@ -43,7 +43,11 @@ jobs:
         id: meta
         uses: docker/metadata-action@v3
         with:
-          images: lucasmelin/wordle-operator
+          images: |
+            lucasmelin/wordle-operator
+            ghcr.io/lucasmelin/wordle-operator
+          tags: |
+            type=raw,value=latest,enable=${{ endsWith(github.ref, github.event.repository.default_branch) }}
 
       - name: Build and push Docker images
         uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
