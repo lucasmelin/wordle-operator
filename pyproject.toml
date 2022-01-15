@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "wordle-operator"
+version = "0.1.0"
+description = "Play Wordle from your Kubernetes cluster"
+authors = ["Lucas Melin <lucas.melin@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+kubernetes = "^21.7.0"
+kopf = "^1.35.3"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

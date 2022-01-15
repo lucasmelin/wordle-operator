@@ -1,0 +1,6 @@
+apiVersion: operators.lucasmelin.com/v1
+kind: Wordle
+metadata:
+  name: wordle-2022-01-15
+spec:
+  guess: punks
