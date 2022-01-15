@@ -8,6 +8,12 @@ name: Publish Docker image
 on:
   release:
     types: [published]
+  workflow_dispatch:
+    inputs:
+        name:
+          description: 'Dummy inpul'
+          required: false
+          default: 'None'
 
 jobs:
   push_to_registries:
