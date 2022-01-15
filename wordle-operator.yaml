@@ -56,8 +56,8 @@ spec:
       serviceAccountName: wordle-operator
       containers:
         - name: wordle-operator
-          image: lucasmelin/wordle-operator
-          imagePullPolicy: Never
+          image: ghcr.io/lucasmelin/wordle-operator:latest
+          imagePullPolicy: Always
 
 ---
 apiVersion: rbac.authorization.k8s.io/v1
